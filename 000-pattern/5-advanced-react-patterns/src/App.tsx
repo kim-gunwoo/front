@@ -1,14 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Usage as CompoundComponent } from "./patterns/compound-component/Usage";
+import { Usage as ControlProps } from "./patterns/control-props/Usage";
 
 function App() {
   return (
     <Container>
       <Title>5 Advanced React Pattern </Title>
+
       <PatternContainer>
         <Title>Compound component pattern</Title>
         <CompoundComponent />
+      </PatternContainer>
+
+      <PatternContainer>
+        <Title>Control props pattern</Title>
+        <ControlProps />
       </PatternContainer>
     </Container>
   );
