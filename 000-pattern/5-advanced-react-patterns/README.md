@@ -5,7 +5,13 @@ npm i styled-components
 npm i @types/styled-components -D
 ```
 
-compound-component
+1. compound-component
+
+```
+
+```
+
+2. control-props
 
 ```
 
