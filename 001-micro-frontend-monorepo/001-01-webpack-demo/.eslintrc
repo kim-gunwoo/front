@@ -1,0 +1,36 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks",
+    "import",
+    "simple-import-sort",
+    "prettier"
+  ],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    // Allows for the parsing of modern ECMAScript features
+    "sourceType": "module"
+    // Allows for the use of imports
+  },
+  "rules": {
+    "react/display-name": "error",
+    "react/jsx-key": "error",
+    "react/jsx-no-duplicate-props": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn",
+    // Checks effect dependencies
+    "no-console": "warn",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "@typescript-eslint/no-namespace": "off"
+  }
+}
