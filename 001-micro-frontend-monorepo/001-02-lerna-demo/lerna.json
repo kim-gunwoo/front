@@ -1,0 +1,77 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "useNx": false,
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventional-changelog-conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "🚀 New Features",
+            "hidden": false
+          },
+          {
+            "type": "fix",
+            "section": "🐛 Bug Fix",
+            "hidden": false
+          },
+          {
+            "type": "docs",
+            "section": "🗒 Documentation",
+            "hidden": false
+          },
+          {
+            "type": "style",
+            "section": "🎨 Styling",
+            "hidden": false
+          },
+          {
+            "type": "refactor",
+            "section": "🛠 Code Refactoring",
+            "hidden": false
+          },
+          {
+            "type": "perf",
+            "section": "🔥 Performance Improvements",
+            "hidden": false
+          },
+          {
+            "type": "build",
+            "section": "⚙️ Build System",
+            "hidden": false
+          },
+          {
+            "type": "ci",
+            "section": "🔩 CI System",
+            "hidden": false
+          },
+          {
+            "type": "revert",
+            "section": "⏮ Revert Commit",
+            "hidden": false
+          },
+          {
+            "type": "chore",
+            "section": "📌 Other",
+            "hidden": false
+          },
+          {
+            "type": "test",
+            "section": "🧪 Test Code",
+            "hidden": false
+          }
+        ]
+      }
+    },
+    "publish": {
+      "conventionalCommits": true
+    }
+  }
+}
