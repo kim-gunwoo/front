@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Usage as CompoundComponent } from "./patterns/compound-component/Usage";
 import { Usage as ControlProps } from "./patterns/control-props/Usage";
+import { Usage as CustomHooks } from "./patterns/custom-hooks/Usage";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
       <PatternContainer>
         <Title>Control props pattern</Title>
         <ControlProps />
+      </PatternContainer>
+
+      <PatternContainer>
+        <Title>Custom hooks pattern</Title>
+        <CustomHooks />
       </PatternContainer>
     </Container>
   );
