@@ -23,6 +23,11 @@ function App() {
         <Title>Custom hooks pattern</Title>
         <CustomHooks />
       </PatternContainer>
+
+      <PatternContainer>
+        <Title>Props getters pattern</Title>
+        <CustomHooks />
+      </PatternContainer>
     </Container>
   );
 }
