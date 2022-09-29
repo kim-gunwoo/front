@@ -1,11 +1,15 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { StyledButton } from "./styles.js";
 
-function Increment({ icon = "plus", onClick, ...props }) {
+interface IProps {
+  onClick: () => void;
+}
+
+function Increment({ onClick, ...props }: IProps) {
   return (
     <StyledButton onClick={onClick} {...props}>
-      <FontAwesomeIcon icon={icon} color="#17a2b8" />
+      +
     </StyledButton>
   );
 }

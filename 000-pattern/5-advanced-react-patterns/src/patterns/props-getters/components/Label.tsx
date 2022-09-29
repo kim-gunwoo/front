@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-function Label({ children }) {
+interface IProps {
+  children: React.ReactNode;
+}
+
+function Label({ children }: IProps) {
   return <StyledLabel>{children}</StyledLabel>;
 }
 
