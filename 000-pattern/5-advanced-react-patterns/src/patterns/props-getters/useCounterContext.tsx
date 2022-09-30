@@ -1,8 +1,19 @@
 import React from "react";
 
-const CounterContext = React.createContext(undefined);
+interface ICouterContextProps {
+  count: number;
+}
 
-function CounterProvider({ children, value }) {
+const CounterContext = React.createContext<ICouterContextProps | undefined>(
+  undefined
+);
+
+interface IProps {
+  children: React.ReactNode;
+  value: ICouterContextProps;
+}
+
+function CounterProvider({ children, value }: IProps) {
   return (
     <CounterContext.Provider value={value}>{children}</CounterContext.Provider>
   );

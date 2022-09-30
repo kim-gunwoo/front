@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useCounterContext } from "../useCounterContext";
 
 interface IProps {
-  max: number;
+  max?: number;
 }
 
 function Count({ max }: IProps) {

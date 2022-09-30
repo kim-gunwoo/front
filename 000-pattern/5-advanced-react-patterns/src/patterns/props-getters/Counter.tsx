@@ -3,8 +3,15 @@ import styled from "styled-components";
 import { CounterProvider } from "./useCounterContext";
 import { Count, Label, Decrement, Increment } from "./components";
 
-function Counter({ children, value: count, onChange }) {
+interface IProps {
+  children: React.ReactNode;
+  value: number;
+  onChange?: (count: number) => void;
+}
+
+function Counter({ children, value: count, onChange }: IProps) {
   const firstMounded = useRef(true);
+
   useEffect(() => {
     if (!firstMounded.current) {
       onChange && onChange(count);

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StyledButton } from "./styles.js";
+import { StyledButton } from "./styles";
 
 interface IProps {
   onClick: () => void;

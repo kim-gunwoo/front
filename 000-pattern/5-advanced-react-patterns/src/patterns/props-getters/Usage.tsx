@@ -6,15 +6,11 @@ import { useCounter } from "./useCounter";
 const MAX_COUNT = 10;
 
 function Usage() {
-  const {
-    count,
-    getCounterProps,
-    getIncrementProps,
-    getDecrementProps
-  } = useCounter({
-    initial: 0,
-    max: MAX_COUNT
-  });
+  const { count, getCounterProps, getIncrementProps, getDecrementProps } =
+    useCounter({
+      initial: 0,
+      max: MAX_COUNT,
+    });
 
   const handleBtn1Clicked = () => {
     console.log("btn 1 clicked");
@@ -23,10 +19,10 @@ function Usage() {
   return (
     <>
       <Counter {...getCounterProps()}>
-        <Counter.Decrement icon={"minus"} {...getDecrementProps()} />
+        <Counter.Decrement {...getDecrementProps()} />
         <Counter.Label>Counter</Counter.Label>
         <Counter.Count />
-        <Counter.Increment icon={"plus"} {...getIncrementProps()} />
+        <Counter.Increment {...getIncrementProps()} />
       </Counter>
       <StyledContainer>
         <button {...getIncrementProps({ onClick: handleBtn1Clicked })}>
