@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
-interface ButtonProps {
+interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   className?: string;
 }
 
-export default function Button({ className, children }: ButtonProps) {
-  return <Container className={className}>{children}</Container>;
+export default function Button({ className, children, ...rest }: ButtonProps) {
+  return (
+    <Container className={className} {...rest}>
+      {children}
+    </Container>
+  );
 }
 
 const Container = styled.button`
