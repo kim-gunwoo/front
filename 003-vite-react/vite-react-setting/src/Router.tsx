@@ -9,7 +9,6 @@ export default function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<CounterPage />}></Route>
-
         <Route path="/home" element={<Home />}></Route>
         <Route path="/test" element={<TestPage />}></Route>
         <Route path="/search" element={<SearchPage />}></Route>
