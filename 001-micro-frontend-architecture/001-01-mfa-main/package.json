@@ -1,0 +1,20 @@
+{
+  "name": "mfa-main",
+  "version": "1.0.0",
+  "description": "[blog](https://velog.io/@kyman19940214/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-with-React)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auth:dev": "cd ./auth npm start",
+    "container:dev": "cd ./container && npm start",
+    "dashboard:dev": "cd ./dashboard && npm start",
+    "marketing:dev": "cd ./marketing && npm start",
+    
+    "dev": "concurrently \"npm run *:dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
