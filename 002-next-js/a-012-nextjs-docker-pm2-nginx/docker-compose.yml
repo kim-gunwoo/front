@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webapp: 
+    build: ./
+  ng: 
+    build: ./nginx
+    ports:
+      - 80:80
