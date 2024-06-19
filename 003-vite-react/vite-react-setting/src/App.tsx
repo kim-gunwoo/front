@@ -1,7 +1,10 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Router from './Router';
 import GlobalStyles from './styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
+
+const queryClient = new QueryClient();
 
 function App() {
   console.log(import.meta.env);
@@ -10,10 +13,12 @@ function App() {
   console.log(import.meta.env.VITE_KEY); // VITE prefix가 있어서 호출 가능
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Router />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Router />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 

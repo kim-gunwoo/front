@@ -1,0 +1,9 @@
+/* stylelint-disable selector-pseudo-class-no-unknown */
+/* stylelint-disable property-no-unknown */
+
+$gray: #888;
+
+:export {
+  primary: $gray;
+  secondary: #909;
+}

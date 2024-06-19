@@ -1,0 +1,6 @@
+@use "./styles/palette.module.scss" as f;
+
+.container {
+    background: red;
+    color: f.$secondary;
+}
