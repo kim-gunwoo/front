@@ -21,7 +21,7 @@ const undefinedVar = undefined;
 // any - 아무 타입이나 입력 할 수 있는 치트키같은 타입
 let anyVar;
 anyVar = 100;
-anyVar = "코드팩토리";
+anyVar = "String";
 anyVar = true;
 let testNumber = anyVar;
 let testString = anyVar;
@@ -29,7 +29,7 @@ let testBolean = anyVar;
 // unknown - 알 수 없는타입
 let unknownType;
 unknownType = 100;
-unknownType = "코드팩토리";
+unknownType = "String";
 unknownType = true;
 // let testNumber2: number = unknownType;
 // let testString2: string = unknownType;
