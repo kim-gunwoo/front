@@ -1,0 +1,14 @@
+@use '@/styles/globals.module';
+@use '@/styles/mixin.module';
+@use '@/styles/variables.module';
+
+.container {
+  margin: globals.pxToRem(24px) globals.pxToRem(20px);
+  padding: globals.pxToRem(24px) globals.pxToRem(20px);
+  color: globals.$orange_500;
+  
+  .wrapper {
+    padding: mixin.pxToRem(24px) mixin.pxToRem(20px);
+    color : variables.$gray_700;
+  }
+}
