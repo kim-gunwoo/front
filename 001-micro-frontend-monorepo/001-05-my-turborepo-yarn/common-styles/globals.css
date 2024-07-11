@@ -1,0 +1,168 @@
+
+@font-face {
+  font-weight: normal;
+  font-family: NanumSquareLight;
+  font-style: normal;
+  src: url(../common-assets/fonts/nanumsquare/NanumSquareLight.eot) format('truetype'),
+      url(../common-assets/fonts/nanumsquare/NanumSquareLight.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: NanumSquareRegular;
+  font-style: normal;
+  src: url(../common-assets/fonts/nanumsquare/NanumSquareRegular.ttf) format('truetype'),
+  url(../common-assets/fonts/nanumsquare/NanumSquareRegular.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: NanumSquareBold;
+  font-style: normal;
+  src: url(../common-assets/fonts/nanumsquare/NanumSquareBold.ttf) format('truetype'),
+  url(../common-assets/fonts/nanumsquare/NanumSquareBold.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: NanumSquareExtraBold;
+  font-style: normal;
+  src: url(../common-assets/fonts/nanumsquare/NanumSquareExtraBold.ttf) format('truetype'),
+  url(../common-assets/fonts/nanumsquare/NanumSquareExtraBold.eot) format('embedded-opentype');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'GmarketSans';
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'GmarketSans';
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'GmarketSans';
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+  font-display: swap;
+} 
+
+@font-face{
+  font-weight: normal;
+  font-family: Inter;
+  font-style: normal;
+  src: url(https://d2twywxul87hjh.cloudfront.net/event/font/Inter-Regular.ttf) format("truetype"),
+      url(https://d2twywxul87hjh.cloudfront.net/event/font/Inter-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Black.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Black.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-ExtraBold.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-ExtraBold.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Bold.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Bold.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-SemiBold.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-SemiBold.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Medium.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Medium.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Regular.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Regular.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Light.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Light.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-ExtraLight.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-ExtraLight.woff')
+          format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: 'Pretendard';
+  src: url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Thin.woff2')
+          format('woff2'),
+      url('https://d2twywxul87hjh.cloudfront.net/backoffice/assets/fonts/pretendard/Pretendard-Thin.woff')
+          format('woff');
+  font-display: swap;
+}
+
+
