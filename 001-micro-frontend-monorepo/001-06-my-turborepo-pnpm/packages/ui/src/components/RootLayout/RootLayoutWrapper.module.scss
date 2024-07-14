@@ -1,0 +1,167 @@
+@use '~/styles/mixin.module';
+@use '~/styles/variables.module';
+
+.overlay {
+  position: fixed;
+  z-index: 0;
+  width: 100vw;
+  height: calc(100vh - env(safe-area-inset-bottom));
+  background-color: #ededed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background: #ededed;
+
+  @media screen and (max-width: 1046px) {
+    .side_view{
+      display: none;
+
+      &.right &.left{
+        display: none;
+      }
+    }
+  }
+
+  & > main {
+      z-index: 1;
+      flex:1;
+      width: 100%;
+      max-width: mixin.pxToRem(412px);
+      min-height: 100vh;
+      @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+      }
+      background: variables.$base_white;
+  }
+
+  @media screen and (min-width: 1046px) {
+    .side_view{
+      position: fixed;
+      top: mixin.pxToRem(80px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: mixin.pxToRem(285px);
+      height: mixin.pxToRem(696px);
+      background: variables.$base_white;
+      border-radius: 8px;
+      
+      &.left{
+        padding: mixin.pxToRem(64px) mixin.pxToRem(12px);
+        transform: translate(mixin.pxToRem(-365px), 0);
+
+        .passorder_title{
+          display: flex;
+          gap: mixin.pxToRem(12px);
+          align-items: center;
+          justify-content: center;
+          margin-bottom: mixin.pxToRem(28px);
+          font-size: mixin.pxToRem(20px);
+          font-family: 'NanumSquareExtraBold', serif;
+          line-height: normal;
+        }
+
+        .passorder_introduce{
+          margin-bottom: mixin.pxToRem(16px);
+          font-size: mixin.pxToRem(16px);
+          font-family: 'NanumSquareRegular', serif;
+          line-height: mixin.pxToRem(20px);
+          text-align: center;
+        }
+
+        .store_wrapper{
+          display: flex;
+          gap: mixin.pxToRem(12px);
+          align-items: center;
+          justify-content: center;
+          margin-bottom: mixin.pxToRem(24px);
+          color: variables.$gray_700;
+        }
+      }
+
+      &.right{
+        gap: mixin.pxToRem(44px);
+        padding: mixin.pxToRem(24px) mixin.pxToRem(20px);
+        transform: translate(mixin.pxToRem(365px), 0);
+
+        .trophy_wrapper{
+          display: flex;
+          flex-direction: column;
+          gap: mixin.pxToRem(16px);
+          align-items: center;
+          justify-content: center;
+        }
+
+        .trophy{
+          height: mixin.pxToRem(120px);
+        }
+
+        .trophy_introduce{
+          margin-bottom: mixin.pxToRem(16px);
+          font-size: mixin.pxToRem(16px);
+          font-family: 'NanumSquareBold', serif;
+          line-height: mixin.pxToRem(26px);
+
+          .bold{
+            font-size: mixin.pxToRem(18px);
+            font-family: 'NanumSquareExtraBold', serif;
+            line-height: mixin.pxToRem(26px);
+
+            &.orange{
+              color: variables.$orange_500;
+            }
+          }
+        }
+
+        .panel_wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: mixin.pxToRem(28px);
+
+          .panel {
+            display: flex;
+            flex-direction: column;
+            gap: mixin.pxToRem(12px);
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .store {
+              display: flex;
+              gap: mixin.pxToRem(4px);
+              align-items: center;
+              justify-content: center;
+              color: variables.$gray_700;
+              font-size: mixin.pxToRem(14px);
+              font-family: 'NanumSquareRegular', serif;
+              line-height: normal;
+            }
+
+            .achievement {
+              padding: mixin.pxToRem(2px) mixin.pxToRem(12px);
+              font-size: mixin.pxToRem(16px);
+              font-family: 'NanumSquareBold', serif;     
+              line-height: mixin.pxToRem(24px);
+              background: #f4f4f4;
+              border-radius: 99px;
+            }
+          }
+        }
+
+        .qr_wrapper{
+          display: flex;
+          flex-direction: column;
+          gap: mixin.pxToRem(12px);
+          align-items: center;
+          justify-content: center;
+          font-size: mixin.pxToRem(14px);
+          font-family: 'NanumSquareBold', serif;
+          line-height: mixin.pxToRem(24px);
+        }
+      }
+    }
+  }
+}
