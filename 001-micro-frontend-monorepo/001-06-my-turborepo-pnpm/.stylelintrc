@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["export"]
+    }],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["use", "function","return"]
+    }],
+    "function-no-unknown": [true, { "ignoreFunctions": ["/\\${/"] }]
+  },
+  "overrides": [
+    {
+      "files": ["**/variables.module.scss"],
+      "rules": {
+        "property-no-unknown": null
+      }
+    }
+  ]
+}
