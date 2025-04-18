@@ -1,0 +1,22 @@
+@import 'shared-ui/src/index.scss';
+@import '../../../page.module.scss';
+
+._error_fallback {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .retry_button {
+    margin-top: 1rem;
+  }
+}
