@@ -1,0 +1,84 @@
+{
+  "button": {
+    "prev-page": "Prev Page",
+    "next-page": "Next Page",
+    "go_to_form": "Fill out the form",
+    "go_to_pdf": "Upload PDF"
+  },
+
+  "user_info": {
+    "label": {
+      "job": "Job",
+      "nation": "Country of residence",
+      "difficulty": "Interview difficulty",
+      "years-of-experience": "Years of experience",
+      "go-to-resume-page": "Go To Resume Page",
+      "not-selected": "Not Selected"
+    },
+
+    "load-job-data": "Receiving Job data ...",
+
+    "placeholder": {
+      "job": "Please select your job (or future aspirations).",
+      "nation": "Please select your country of residence.",
+      "difficulty": "Please select the level of interview difficulty."
+    },
+
+    "router": {
+      "user-info": "User Info",
+      "resume": "Resume",
+      "input-confirmation": "Confirmation"
+    },
+
+    "nation": {
+      "korea": "Korea",
+      "english": "English"
+    },
+
+    "difficulty": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    },
+
+    "career": {
+      "newbie": "Newbie",
+      "more-than-10-years": "10 years +",
+      "years": "years"
+    },
+
+    "error_fallback": {
+      "title": "Oops!",
+      "description": "Something went wrong.",
+      "content": "There's a high chance that there's a network problem or a server error. Please check your internet connection or try again later.",
+      "button": "Retry"
+    }
+  },
+
+  "resume_info": {
+    "label": {},
+    "placeholder": {
+      "textarea": "Please fill in the details for each option."
+    },
+    "tab": "Input {{idx}}",
+    "select": {
+      "introduction": "Introduction",
+      "career": "Work Experience",
+      "education": "Education",
+      "technical": "Technical Skills",
+      "outsideActivities": "Extracurricular Activities",
+      "project": "Projects",
+      "acc": "Awards / Certifications"
+    },
+    "textarea": {
+      "explain": "* You can enter a minimum of 1 and a maximum of 4 contents, and 3 questions will be created for each.",
+      "error": "The input value must be between 100 and 1,000 characters."
+    }
+  },
+
+  "confirmation": {
+    "error_message": {
+      "resume": "Your resume information is empty."
+    }
+  }
+}

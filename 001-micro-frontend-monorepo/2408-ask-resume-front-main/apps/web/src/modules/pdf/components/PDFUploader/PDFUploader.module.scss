@@ -1,0 +1,63 @@
+@import 'shared-ui/src/index.scss';
+
+.PDFUploader {
+  /* Layout */
+  padding: 2.4rem;
+  gap: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  /* Style */
+  border-radius: 1rem;
+  box-shadow: $shadow_2;
+
+  // Footer
+  footer {
+    /* Layout */
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 1.6rem 0;
+    margin-top: 1.6rem;
+
+    /* Style */
+    background: $white;
+    position: sticky;
+    bottom: 0;
+
+    section {
+      display: flex;
+      gap: 1.2rem;
+
+      &:first-child {
+        justify-content: flex-start;
+      }
+      &:last-child {
+        justify-content: flex-end;
+      }
+    }
+
+    @media screen and (max-width: #{$breakpoint-xsmall}) {
+      section:first-child > * {
+        display: none;
+      }
+    }
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.hintText {
+  /* Layout */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+
+  /* Typography */
+  color: $gray_6;
+}

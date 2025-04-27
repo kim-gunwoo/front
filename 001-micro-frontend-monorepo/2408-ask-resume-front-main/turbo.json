@@ -1,0 +1,22 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**", "storybook-static/**"],
+      "env": ["NEXT_PUBLIC_PRODUCTION_API_URL"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
+    },
+    "deploy": {
+      "dependsOn": ["build", "lint"]
+    }
+  },
+  "globalEnv": ["GITHUB_TOKEN", "NODE_ENV", "ANALYZE", "NEXT_PUBLIC_API_URL"],
+  "globalDependencies": [".env"]
+}

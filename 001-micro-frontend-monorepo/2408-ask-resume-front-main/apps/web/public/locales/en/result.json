@@ -1,0 +1,14 @@
+{
+  "loading_fallback": {
+    "title": "Loading...",
+    "description": "Creating a question. It may take about 30 seconds."
+  },
+
+  "result": {
+    "title": "Interview question generation request completed.",
+    "subtitle": "You can check the status of requests and the questions generated on My page",
+    "question": "[Question {{index}}] {{question}}",
+    "answer": "[Best Answer {{index}}] {{answer}}",
+    "button": "Download Q&A as a text file"
+  }
+}

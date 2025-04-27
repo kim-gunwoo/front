@@ -1,0 +1,35 @@
+{
+  "name": "shared-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-uid": "^2.3.2",
+    "shared-lib": "workspace:*",
+    "styled-components": "^5.3.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@svgr/webpack": "^7.0.0",
+    "@types/node-sass": "^4.11.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "classnames": "^2.3.2",
+    "css-loader": "^6.7.3",
+    "eslint": "8.37.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-plugin-storybook": "^0.6.11",
+    "node-sass": "^8.0.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "storybook": "7.0.6",
+    "style-loader": "^3.3.2",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "tsconfig": "workspace:*"
+  }
+}
